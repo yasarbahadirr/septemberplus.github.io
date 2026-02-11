@@ -78,6 +78,9 @@
             color: #667eea;
             text-decoration: none;
         }
+        .contact a:hover {
+            text-decoration: underline;
+        }
         .footer {
             text-align: center;
             margin-top: 40px;
@@ -86,6 +89,24 @@
             color: #888;
             font-size: 0.85em;
         }
+        .highlight-box {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            h1.title {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -93,80 +114,160 @@
         <div class="logo">
             <h1>📚 SeptemberPlus</h1>
         </div>
-        
+
         <h1 class="title">Gizlilik Politikası</h1>
-        <p class="date">Son Güncelleme: 11 Ocak 2026</p>
-        
+        <p class="date">Son Güncelleme: 10 Şubat 2026</p>
+
         <p>SeptemberPlus olarak gizliliğinize önem veriyoruz. Bu Gizlilik Politikası, uygulamamızı kullanırken toplanan, kullanılan ve korunan bilgilerinizi açıklar.</p>
-        
+
+        <div class="highlight-box">
+            <strong>⚠️ Önemli Bilgilendirme - Yapay Zeka Veri Paylaşımı:</strong><br>
+            Bu uygulama, soru çözüm özelliği için üçüncü taraf yapay zeka servisleri (OpenAI ve Anthropic) kullanmaktadır. Detaylı bilgi için Bölüm 3.1'i inceleyiniz.
+        </div>
+
         <h2>1. Toplanan Bilgiler</h2>
         <p>Uygulamamızı kullandığınızda aşağıdaki bilgileri toplayabiliriz:</p>
         <ul>
-            <li><strong>Hesap Bilgileri:</strong> Ad, e-posta adresi, şifre (şifrelenmiş olarak)</li>
-            <li><strong>Profil Bilgileri:</strong> Hazırlandığınız sınav, hedeflediğiniz bölüm</li>
-            <li><strong>Kullanım Verileri:</strong> Çözülen sorular, uygulama kullanım istatistikleri</li>
-            <li><strong>Cihaz Bilgileri:</strong> Cihaz modeli, işletim sistemi versiyonu, benzersiz cihaz tanımlayıcısı</li>
+            <li><strong>Hesap Bilgileri:</strong> Ad-soyad, e-posta adresi, telefon numarası (isteğe bağlı), şifre (şifrelenmiş olarak)</li>
+            <li><strong>Profil Bilgileri:</strong> Okul, sınıf seviyesi, profil fotoğrafı (isteğe bağlı)</li>
+            <li><strong>Kullanım Verileri:</strong> Çözülen sorular, çözüm geçmişi, uygulama kullanım istatistikleri, kredi kullanım bilgileri</li>
+            <li><strong>Cihaz Bilgileri:</strong> Cihaz modeli, işletim sistemi versiyonu, uygulama sürümü</li>
             <li><strong>Fotoğraflar:</strong> Soru çözmek için yüklediğiniz fotoğraflar (yalnızca AI analizi için işlenir)</li>
+            <li><strong>Abonelik Bilgileri:</strong> Satın alma kayıtları, abonelik durumu (Apple/Google üzerinden işlenir)</li>
         </ul>
-        
+
         <h2>2. Bilgilerin Kullanımı</h2>
         <p>Topladığımız bilgileri aşağıdaki amaçlarla kullanırız:</p>
         <ul>
             <li>Hesabınızı oluşturmak ve yönetmek</li>
-            <li>Soru çözüm hizmetini sağlamak</li>
-            <li>Kullanım istatistiklerinizi göstermek</li>
-            <li>Uygulama deneyimini iyileştirmek</li>
+            <li>Yapay zeka destekli soru çözüm hizmetini sağlamak</li>
+            <li>Kullanım istatistiklerinizi göstermek ve ilerlemenizi takip etmek</li>
+            <li>Uygulama deneyimini iyileştirmek ve kişiselleştirmek</li>
             <li>Teknik sorunları tespit etmek ve gidermek</li>
             <li>Müşteri desteği sağlamak</li>
+            <li>Abonelik ve ödeme işlemlerini yönetmek</li>
+            <li>Uygulamayla ilgili bildirimleri göndermek</li>
         </ul>
-        
+
         <h2>3. Bilgilerin Paylaşımı</h2>
-        <p>Kişisel bilgilerinizi üçüncü taraflarla satmıyoruz. Ancak aşağıdaki durumlar hariç tutulur:</p>
+        <p>Kişisel bilgilerinizi üçüncü taraflarla satmıyoruz. Ancak, hizmetimizi sunmak için aşağıdaki güvenilir hizmet sağlayıcılarıyla çalışıyoruz:</p>
         <ul>
-            <li><strong>Hizmet Sağlayıcılar:</strong> Firebase (veri depolama), OpenAI (AI soru çözümü), RevenueCat (abonelik yönetimi), Google AdMob (reklamlar)</li>
-            <li><strong>Yasal Gereklilikler:</strong> Yasal bir zorunluluk olduğunda</li>
+            <li><strong>Firebase (Google):</strong> Kimlik doğrulama, veri depolama, analitik ve hata raporlama</li>
+            <li><strong>OpenAI / Anthropic:</strong> Yapay zeka destekli soru çözümü (detaylar aşağıda)</li>
+            <li><strong>RevenueCat:</strong> Abonelik ve ödeme yönetimi</li>
+            <li><strong>Google AdMob:</strong> Ücretsiz kullanıcılar için reklam gösterimi</li>
+            <li><strong>Apple/Google:</strong> Uygulama içi satın alma işlemleri</li>
         </ul>
-        
+
+        <h2>3.1. Yapay Zeka Servisleri ile Veri Paylaşımı</h2>
+        <p>Soru çözüm özelliğimizi sunabilmek için üçüncü taraf yapay zeka servisleri kullanıyoruz. <strong>İlk soru çözümünüzden önce uygulama içinde açık onayınız alınmaktadır.</strong></p>
+
+        <p><strong>Kullanılan AI Servisleri:</strong></p>
+        <ul>
+            <li><strong>OpenAI (GPT-4):</strong> Ücretsiz kullanıcılar için soru analizi ve çözümü - ABD merkezli</li>
+            <li><strong>Anthropic (Claude):</strong> Premium kullanıcılar için gelişmiş soru analizi ve çözümü - ABD merkezli</li>
+        </ul>
+
+        <p><strong>AI Servislerine Gönderilen Veriler:</strong></p>
+        <ul>
+            <li>Çözmek istediğiniz sorunun fotoğrafı</li>
+            <li>Seçtiğiniz ders kategorisi (örn: Matematik, Fizik)</li>
+        </ul>
+
+        <p><strong>AI Servislerine GÖNDERİLMEYEN Veriler:</strong></p>
+        <ul>
+            <li>Adınız, soyadınız veya kullanıcı adınız</li>
+            <li>E-posta adresiniz veya telefon numaranız</li>
+            <li>Konum bilgileriniz</li>
+            <li>Cihaz bilgileriniz</li>
+            <li>Hesap veya profil bilgileriniz</li>
+            <li>IP adresiniz (uygulama tarafından iletilmez)</li>
+        </ul>
+
+        <p><strong>Veri İşleme ve Güvenlik:</strong></p>
+        <ul>
+            <li>Fotoğraflarınız yalnızca soru çözümü amacıyla işlenir</li>
+            <li>Veriler şifreli bağlantı (HTTPS/TLS) üzerinden iletilir</li>
+            <li>AI servisleri verileri kendi gizlilik politikalarına uygun şekilde işler</li>
+            <li>Çözüm tamamlandıktan sonra fotoğraflar cihazınızda saklanmaz</li>
+        </ul>
+
+        <p><strong>Kullanıcı Onayı:</strong></p>
+        <ul>
+            <li>İlk soru çözmeden önce uygulama içinde açık onayınız alınır</li>
+            <li>Onay vermeden soru çözüm özelliğini kullanamazsınız</li>
+            <li>Dilediğiniz zaman uygulamayı kullanmayı bırakarak veri paylaşımını durdurabilirsiniz</li>
+        </ul>
+
+        <p><strong>AI Servislerinin Gizlilik Politikaları:</strong></p>
+        <ul>
+            <li><a href="https://openai.com/privacy" target="_blank">OpenAI Gizlilik Politikası</a></li>
+            <li><a href="https://www.anthropic.com/privacy" target="_blank">Anthropic Gizlilik Politikası</a></li>
+        </ul>
+
+        <p><strong>Yasal Gereklilikler:</strong> Yasal bir zorunluluk olduğunda veya haklarımızı korumak için bilgilerinizi yetkili mercilerle paylaşabiliriz.</p>
+
         <h2>4. Veri Güvenliği</h2>
         <p>Verilerinizi korumak için endüstri standardı güvenlik önlemleri kullanıyoruz:</p>
         <ul>
-            <li>SSL/TLS şifreleme</li>
-            <li>Güvenli sunucu altyapısı (Firebase)</li>
-            <li>Şifrelerin hash'lenerek saklanması</li>
-            <li>Düzenli güvenlik güncellemeleri</li>
+            <li>SSL/TLS şifreleme ile güvenli veri iletimi</li>
+            <li>Firebase güvenlik kuralları ile korumalı veri depolama</li>
+            <li>Şifrelerin hash'lenerek saklanması (asla düz metin olarak saklanmaz)</li>
+            <li>Firebase App Check ile API güvenliği</li>
+            <li>Düzenli güvenlik güncellemeleri ve testleri</li>
+            <li>Erişim kontrolü ve yetkilendirme sistemleri</li>
         </ul>
-        
+
         <h2>5. Çerezler ve İzleme</h2>
-        <p>Uygulamamız, kullanıcı deneyimini iyileştirmek ve analiz yapmak için çeşitli teknolojiler kullanabilir. Bu veriler anonim olarak toplanır ve kişisel bilgilerinizle ilişkilendirilmez.</p>
-        
-        <h2>6. Çocukların Gizliliği</h2>
-        <p>Uygulamamız 13 yaşın altındaki çocuklara yönelik değildir. 13 yaşın altındaki kullanıcılardan bilerek kişisel bilgi toplamayız. Böyle bir durum tespit edilirse, ilgili veriler derhal silinir.</p>
-        
-        <h2>7. Kullanıcı Hakları</h2>
-        <p>Aşağıdaki haklara sahipsiniz:</p>
+        <p>Uygulamamız, kullanıcı deneyimini iyileştirmek ve analiz yapmak için çeşitli teknolojiler kullanabilir:</p>
         <ul>
-            <li><strong>Erişim Hakkı:</strong> Hakkınızda tutulan verilere erişim talep edebilirsiniz</li>
-            <li><strong>Düzeltme Hakkı:</strong> Yanlış verilerin düzeltilmesini isteyebilirsiniz</li>
-            <li><strong>Silme Hakkı:</strong> Hesabınızı ve verilerinizi kalıcı olarak silebilirsiniz</li>
-            <li><strong>Veri Taşınabilirliği:</strong> Verilerinizin bir kopyasını talep edebilirsiniz</li>
+            <li><strong>Firebase Analytics:</strong> Anonim kullanım istatistikleri, hata raporları</li>
+            <li><strong>Google AdMob:</strong> Reklam gösterimi ve performans ölçümü</li>
+            <li><strong>Oturum Bilgileri:</strong> Giriş durumunuzu korumak için güvenli token'lar</li>
         </ul>
-        <p>Bu haklarınızı kullanmak için uygulama içinden "Hesabımı Sil" seçeneğini kullanabilir veya bize e-posta gönderebilirsiniz.</p>
-        
-        <h2>8. Değişiklikler</h2>
-        <p>Bu Gizlilik Politikası zaman zaman güncellenebilir. Önemli değişiklikler olduğunda sizi uygulama içinden bilgilendireceğiz. Politikayı düzenli olarak gözden geçirmenizi öneririz.</p>
-        
-        <h2>9. Reklam Ortakları</h2>
-        <p>Ücretsiz sürümümüzde Google AdMob reklamları gösterilmektedir. Google, reklam deneyimini kişiselleştirmek için çerezler ve cihaz tanımlayıcıları kullanabilir. Daha fazla bilgi için <a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik Politikası</a>'nı inceleyebilirsiniz.</p>
-        
+
+        <h2>6. Çocukların Gizliliği</h2>
+        <p>Uygulamamız 13 yaş ve üzeri kullanıcılara yöneliktir. 13 yaşın altındaki çocuklardan bilerek kişisel bilgi toplamayız.</p>
+
+        <h2>7. Kullanıcı Hakları (KVKK Kapsamında)</h2>
+        <p>Türkiye Cumhuriyeti Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında aşağıdaki haklara sahipsiniz:</p>
+        <ul>
+            <li><strong>Erişim Hakkı:</strong> Hakkınızda tutulan kişisel verilere erişim talep edebilirsiniz</li>
+            <li><strong>Düzeltme Hakkı:</strong> Yanlış veya eksik verilerin düzeltilmesini isteyebilirsiniz</li>
+            <li><strong>Silme Hakkı:</strong> Kişisel verilerinizin silinmesini talep edebilirsiniz</li>
+            <li><strong>İtiraz Hakkı:</strong> Verilerinizin işlenmesine itiraz edebilirsiniz</li>
+        </ul>
+        <p>Bu haklarınızı kullanmak için: Uygulama içinden "Ayarlar" → "Hesabımı Sil" seçeneğini kullanabilir veya destekseptemberplus@outlook.com adresine e-posta gönderebilirsiniz.</p>
+
+        <h2>8. Veri Saklama Süresi</h2>
+        <ul>
+            <li><strong>Hesap Verileri:</strong> Hesabınızı silene kadar</li>
+            <li><strong>Çözüm Geçmişi:</strong> Hesabınızı silene kadar</li>
+            <li><strong>Soru Fotoğrafları:</strong> Çözüm tamamlandıktan sonra saklanmaz</li>
+        </ul>
+
+        <h2>9. Değişiklikler</h2>
+        <p>Bu Gizlilik Politikası zaman zaman güncellenebilir. Önemli değişiklikler olduğunda sizi uygulama içinden bilgilendireceğiz.</p>
+
+        <h2>10. Üçüncü Taraf Hizmet Sağlayıcıların Gizlilik Politikaları</h2>
+        <ul>
+            <li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Gizlilik Politikası</a></li>
+            <li><a href="https://openai.com/privacy" target="_blank">OpenAI Gizlilik Politikası</a></li>
+            <li><a href="https://www.anthropic.com/privacy" target="_blank">Anthropic Gizlilik Politikası</a></li>
+            <li><a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Gizlilik Politikası</a></li>
+            <li><a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik Politikası</a></li>
+        </ul>
+
         <div class="contact">
-            <h2 style="margin-top: 0; border: none; padding-left: 0;">10. İletişim</h2>
+            <h2 style="margin-top: 0; border: none; padding-left: 0;">11. İletişim</h2>
             <p>Gizlilik politikamızla ilgili sorularınız için bizimle iletişime geçebilirsiniz:</p>
             <p>📧 E-posta: <a href="mailto:destekseptemberplus@outlook.com">destekseptemberplus@outlook.com</a></p>
             <p>📷 Instagram: <a href="https://www.instagram.com/septemberplus/" target="_blank">@septemberplus</a></p>
         </div>
-        
+
         <div class="footer">
             <p>© 2026 SeptemberPlus. Tüm hakları saklıdır.</p>
+            <p style="margin-top: 10px; font-size: 0.8em;">Bu gizlilik politikası, KVKK ve GDPR gerekliliklerine uygun olarak hazırlanmıştır.</p>
         </div>
     </div>
 </body>
